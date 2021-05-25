@@ -33,9 +33,7 @@ input[type="radio"] {
   margin-right: 1.5%; margin-top: -1%; vertical-align: middle;
 }
 .gamer > #gamer, .gamer > #comp {
-  text-align: center; color: #fff; font-weight: bold;
-  border: 2px solid #fff; font-size: 1rem; padding: 3% 5%;
-  position: absolute; top: 35%; width: 25%; -webkit-appearance: none; -moz-appearance: none;
+  text-align: center; color: #fff; font-weight: bold; border: 2px solid #fff; font-size: 1rem; padding: 3% 5%; position: absolute; top: 35%; width: 25%; -webkit-appearance: none; -moz-appearance: none;
 }
 #gamer { background-color: #8000b3; box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #8000b3,  0 0 0.8rem #8000b3, 0 0 2.8rem #8000b3, inset 0 0 1.3rem #8000b3; left: -13%;}
 #comp { background-color: #fafe13; box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 .8rem #fafe13,  0 0 0.1rem #fafe13, 0 0 .5rem #fafe13, inset 0 0 .5rem #fafe13; right: -13%; }
