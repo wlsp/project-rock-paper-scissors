@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* { margin: 0; padding: 0;}
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+html {
+  -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; height: -webkit-fill-available;
+}
+header {
+  background-color: #fff; padding: 1%; color: #24272e;
+}
+body {
+  text-align: center; background-color: #24272e;
+  color: #fff; font-family: Righteous;
+  -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;  height: 100vh;
+}
+.selection-wrap {
+  display: flex; justify-content: center; align-items: center;
+  flex-direction: column; width: 25vw; height: 30vh;
+  border: 3px solid #fff;  margin: 1.5% auto; position: relative; font-size: 1.8rem;
+}
+.scoreCard {
+  display: flex; justify-content: space-evenly; align-items: center;
+  width: 25vw; height: 18vh; border: 3px solid #fff;
+  margin: 1% auto; position: relative; font-size: 2.5rem;
+}
+form {
+  width: 100%; height: 30%; margin: 3% auto;
+}
+form > label {
+  margin: 3%;
+}
+input[type="radio"] {
+  margin-right: 1.5%; margin-top: -1%; vertical-align: middle;
+}
+.gamer > #gamer, .gamer > #comp {
+  text-align: center; color: #fff; font-weight: bold;
+  border: 2px solid #fff; font-size: 1rem; padding: 3% 5%;
+  position: absolute; top: 35%; width: 25%; -webkit-appearance: none; -moz-appearance: none;
+}
+#gamer { background-color: #8000b3; box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #8000b3,  0 0 0.8rem #8000b3, 0 0 2.8rem #8000b3, inset 0 0 1.3rem #8000b3; left: -13%;}
+#comp { background-color: #fafe13; box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 .8rem #fafe13,  0 0 0.1rem #fafe13, 0 0 .5rem #fafe13, inset 0 0 .5rem #fafe13; right: -13%; }
+#move-wrap > button {
+  background-color: transparent;
+  border: 3px solid #fff;
+  width: 15vh; height: 15vh;
+  border-radius: 50%; margin: 1%; -webkit-appearance: none; -moz-appearance: none;
+}
+#rock {
+  background-image: url(../img/icons8-hand_-felsen-50.png); background-position: center; background-repeat: no-repeat; background-size: 65%; -webkit-appearance: none; -moz-appearance: none;
+}
+#paper {
+  background-image: url(../img/icons8-ganze-hand-50.png); background-position: center; background-repeat: no-repeat; background-size: 65%;  -webkit-appearance: none; -moz-appearance: none;
+}
+#scissor {
+  background-image: url(../img/icons8-hand_-schere-50.png);background-position: center;background-repeat: no-repeat; background-size: 65%; -webkit-appearance: none; -moz-appearance: none;
+}
+#gamerWinDisplay {  animation: pulsateGamer .6s infinite alternate; text-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #8000b3, 0 0 0.8rem #8000b3, 0 0 2.8rem #8000b3, inset 0 0 1.3rem #8000b3;
+} @keyframes pulsateGamer { 100% { text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #8000b3,  0 0 80px #8000b3, 0 0 90px #8000b3, 0 0 100px #8000b3, 0 0 150px #8000b3;
+  } 0% {  text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #8000b3, 0 0 45px #8000b3, 0 0 55px #8000b3, 0 0 70px #8000b3, 0 0 80px #8000b3;} }
+#compWinDisplay {
+  animation: pulsateComp .6s infinite alternate; text-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #fafe13, 0 0 0.8rem #fafe13, 0 0 2.8rem #fafe13, inset 0 0 1.3rem #fafe13;} @keyframes pulsateComp { 100% {
+ text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #fafe13, 0 0 80px #fafe13, 0 0 90px #fafe13, 0 0 100px #fafe13, 0 0 150px #fafe13;
+  } 0% { text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #fafe13, 0 0 45px #fafe13, 0 0 55px #fafe13, 0 0 70px #fafe13, 0 0 80px #fafe13;} }
+.winner {
+  background-color: #00800025 !important; border: 3px solid green !important;
+}
+.win {
+  color: green !important;
+}
+.loser {
+  background-color: #ff000038 !important; border: 3px solid red !important;
+}
+.lose {
+  color: red !important;
+}
+.draw {
+  background-color: #52505065 !important; border: 3px solid #525050 !important;
+}
+#resetButton {
+  display: block;
+  margin: 1% auto;
+  height: 5%;
+  width: 10%;
+  font-family: Righteous;
+  color: #24272e;
+  font-size: 1rem;
+  background-color: lightblue;
+  border: none; -webkit-appearance: none; -moz-appearance: none;
+}
+#resetAll {
+  display: block;
+  margin: 1% auto;
+  height: 5%;
+  width: 10%;
+  font-family: Righteous;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #900;
+  border: none; -webkit-appearance: none; -moz-appearance: none;
+}
