@@ -2,7 +2,8 @@
 let pointGamer = 0;
 let pointComp = 0;
 
-// Setting the "CONST" which I will need in functions
+
+// Setting CONST which I will need in functions
 const gamerPoints = document.getElementById("pointsGamer");
 const computerPoints = document.getElementById("pointsComp");
 const scoreCard = document.querySelector(".scoreCard");
@@ -11,11 +12,51 @@ const rockChoice = document.getElementById("rock");
 const paperChoice = document.getElementById("paper");
 const scissorChoice = document.getElementById("scissor");
 
-/* Better withou the sup comment, who chose which choice*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Better without the sup comment, who had which choice */
 // const gamerSmall = "(gamer)".fontsize(2.5).sup();
 // const compSmall = "(comp.)".fontsize(2.5).sup();
 // ${gamerSmall}
 // ${compSmall}
+
+// Setting  how many Rounds to play until GameOver 
+// Disable - because I set the Game for points NOT rounds
+// let round = 0
+// let roundMax; 
+
+/*  ========>>> However, I turned this function off because I count points for a win and not rounds. 
+                It only serves to illustrate that I am capable of writing this function - It will not work.  <<<======== */
+                
+// function roundSelected() {
+//     currentRound.innerHTML = round
+//     if (round5.checked) {
+//         roundMax === 5
+//         radioBtn.style.display = "none"
+//         roundsCounter.style.display = "block"
+//         totalRound.innerHTML = roundMax
+//     } else if (round10.checked) {
+//         roundMax === 10
+//         radioBtn.style.display = "none"
+//         roundsCounter.style.display = "block"
+//         totalRound.innerHTML = roundMax
+//     } else if (round15.checked) {
+//         roundMax === 15
+//         radioBtn.style.display = "none"
+//         roundsCounter.style.display = "block"
+//         totalRound.innerHTML = roundMax
+//     } else {
+//         roundMax === 20
+//         radioBtn.style.display = "none"
+//         roundsCounter.style.display = "block"
+//         totalRound.innerHTML = roundMax
+//     }
+// }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /* ============= B O N U S =============== */
 //Asking the Gamer for a Gamertag
@@ -105,6 +146,12 @@ function game(gamerChoice) {
             draw(gamerChoice, computerChoice);
             break;
     }
+// Disable - because I set the Game for points NOT rounds
+    // if (rounds === roundMax) {
+    //     gameOver()
+    // }
+    // rounds++;
+    // currentRound.innerHTML = round;
 }
 
 // Game Function 
